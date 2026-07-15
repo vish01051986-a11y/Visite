@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration - JAIN College</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo-link">
+                <svg width="40" height="40" viewBox="0 0 100 100" style="fill: currentColor;">
+                    <polygon points="50,15 90,35 90,75 50,95 10,75 10,35" />
+                </svg>
+                <span>JAIN College</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="register.html" class="active">Register</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h2>Student Registration Form</h2>
+            <form id="registrationForm" action="submit.html" method="POST" autocomplete="on">
+                
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" class="form-control" placeholder="Enter your full name" required max="50">
+                    <div id="nameError" class="error-message"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="name@example.com" required>
+                    <div id="emailError" class="error-message"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="program">Interested Program</label>
+                    <select id="program" name="program" class="form-control">
+                        <option value="computing">Computing & IT</option>
+                        <option value="business">Business Administration</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn">Submit Application</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 JAIN College Foundation Diploma. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
